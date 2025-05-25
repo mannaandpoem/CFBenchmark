@@ -4,6 +4,7 @@ import json
 
 def load_dataset(path):
     dataset = []
+    each_data = []
 
     for dirpath, dirnames, filenames in os.walk(path):
         for filename in [f for f in filenames if f.endswith(".json")]:
@@ -13,12 +14,12 @@ def load_dataset(path):
             frame = json.load(open(path, 'r'))
             if domain in ['股票分析', '基金分析', '行情分析', '行业板块分析', '公告解读', '宏观解读', '事件解读', '行业解读']:
                 each_data = load_generation(frame, subject, domain)
-            elif domain in ['金融实体识别']:
-                each_data = load_recognization(frame, subject, domain)
-            elif domain in ['金融业务合规', '信息安全合规']:
-                each_data = load_compliance(frame, subject, domain)
-            elif domain in ['金融数据检查', '金融数值提取', '金融指标计算', '金融实体消歧', '金融意图理解', '情绪识别', '金融事实', '金融术语']:
-                each_data = load_choice(frame, subject, domain)
+            # elif domain in ['金融实体识别']:
+            #     each_data = load_recognization(frame, subject, domain)
+            # elif domain in ['金融业务合规', '信息安全合规']:
+            #     each_data = load_compliance(frame, subject, domain)
+            # elif domain in ['金融数据检查', '金融数值提取', '金融指标计算', '金融实体消歧', '金融意图理解', '情绪识别', '金融事实', '金融术语']:
+            #     each_data = load_choice(frame, subject, domain)
             dataset += each_data
     return dataset
 

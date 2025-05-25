@@ -1,0 +1,7524 @@
+{
+  "task_type": "classification",
+  "classification_type": "sector",
+  "total_samples": 402,
+  "metrics": {
+    "average_f1": 0.503731343283582,
+    "average_precision": 0.482669983416252,
+    "average_recall": 0.5588723051409619
+  },
+  "label_statistics": {
+    "total_unique_labels": 162,
+    "label_metrics": {
+      "装修装饰Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "保险": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "actual_count": 4,
+        "predicted_count": 4,
+        "correct_count": 3
+      },
+      "计算机设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "多元金融": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 5,
+        "correct_count": 0
+      },
+      "食品加工": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 3,
+        "predicted_count": 4,
+        "correct_count": 0
+      },
+      "养殖业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "无相关行业类别": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "化学制品": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6956521739130435,
+        "f1": 0.6808510638297872,
+        "actual_count": 23,
+        "predicted_count": 24,
+        "correct_count": 16
+      },
+      "装修装饰": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "高低压设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 4,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "生物制品": {
+        "precision": 0.46153846153846156,
+        "recall": 0.6666666666666666,
+        "f1": 0.5454545454545455,
+        "actual_count": 9,
+        "predicted_count": 13,
+        "correct_count": 6
+      },
+      "通信运营": {
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091,
+        "actual_count": 5,
+        "predicted_count": 6,
+        "correct_count": 5
+      },
+      "航运港口": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "电源设备": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "actual_count": 9,
+        "predicted_count": 9,
+        "correct_count": 8
+      },
+      "家居建材": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中药Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "石油化工": {
+        "precision": 0.4444444444444444,
+        "recall": 0.6666666666666666,
+        "f1": 0.5333333333333333,
+        "actual_count": 6,
+        "predicted_count": 9,
+        "correct_count": 4
+      },
+      "其他": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "农业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "营销传播": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "actual_count": 3,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "畜禽养殖": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "actual_count": 7,
+        "predicted_count": 6,
+        "correct_count": 6
+      },
+      "医疗服务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "未直接涉及化学制品、石油化工等行业。因此": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "钢铁": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 3,
+        "predicted_count": 3,
+        "correct_count": 3
+      },
+      "塑料": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "石油开采": {
+        "precision": 0.2,
+        "recall": 0.125,
+        "f1": 0.15384615384615385,
+        "actual_count": 8,
+        "predicted_count": 5,
+        "correct_count": 1
+      },
+      "服装家纺": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "actual_count": 3,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "基础建设": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "actual_count": 4,
+        "predicted_count": 6,
+        "correct_count": 4
+      },
+      "包装印刷": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "锂电池材料": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "航运": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "饮料乳品": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "体育产业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "饮料行业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "证券Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 13,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "其他交运设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 6,
+        "correct_count": 0
+      },
+      "房屋建设": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 4,
+        "correct_count": 0
+      },
+      "贸易": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "白电": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "其他电子Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 2,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "船舶制造": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "其他电子": {
+        "precision": 0.13333333333333333,
+        "recall": 0.8,
+        "f1": 0.2285714285714286,
+        "actual_count": 5,
+        "predicted_count": 30,
+        "correct_count": 4
+      },
+      "通用设备": {
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "f1": 0.3333333333333333,
+        "actual_count": 3,
+        "predicted_count": 3,
+        "correct_count": 1
+      },
+      "铁路运输": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "调味发酵品Ⅱ": {
+        "precision": 0.25,
+        "recall": 0.3333333333333333,
+        "f1": 0.28571428571428575,
+        "actual_count": 3,
+        "predicted_count": 4,
+        "correct_count": 1
+      },
+      "汽车整车": {
+        "precision": 0.6666666666666666,
+        "recall": 0.8571428571428571,
+        "f1": 0.75,
+        "actual_count": 7,
+        "predicted_count": 9,
+        "correct_count": 6
+      },
+      "贵金属": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "IT服务Ⅱ": {
+        "precision": 0.2222222222222222,
+        "recall": 0.6666666666666666,
+        "f1": 0.3333333333333333,
+        "actual_count": 3,
+        "predicted_count": 9,
+        "correct_count": 2
+      },
+      "医药商业": {
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1": 0.5,
+        "actual_count": 6,
+        "predicted_count": 14,
+        "correct_count": 5
+      },
+      "家电": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "电气自动化设备": {
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1": 0.25,
+        "actual_count": 1,
+        "predicted_count": 7,
+        "correct_count": 1
+      },
+      "环保工程及服务": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "actual_count": 4,
+        "predicted_count": 3,
+        "correct_count": 3
+      },
+      "化学原料": {
+        "precision": 0.16666666666666666,
+        "recall": 0.14285714285714285,
+        "f1": 0.15384615384615383,
+        "actual_count": 7,
+        "predicted_count": 6,
+        "correct_count": 1
+      },
+      "软件与信息技术服务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "智能装备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "半导体": {
+        "precision": 0.47058823529411764,
+        "recall": 0.7272727272727273,
+        "f1": 0.5714285714285714,
+        "actual_count": 11,
+        "predicted_count": 17,
+        "correct_count": 8
+      },
+      "电缆": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "铁路公路": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "燃气Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "热泵设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "农化制品": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "actual_count": 3,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "教育培训": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "纺织制造": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 3,
+        "predicted_count": 3,
+        "correct_count": 3
+      },
+      "环保服务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "其他轻工制造": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "智能家居": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "稀有金属": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "证券": {
+        "precision": 0.47368421052631576,
+        "recall": 0.6923076923076923,
+        "f1": 0.5625,
+        "actual_count": 13,
+        "predicted_count": 19,
+        "correct_count": 9
+      },
+      "非金属材料Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "港口": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "酒店": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "特钢Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "摩托车及其他": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "环保能源": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "IT服务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "橡胶": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "能源金属": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "航空装备Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "其他电源设备Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 4,
+        "correct_count": 0
+      },
+      "无法归入上述类别。请提供更相关的行业信息以便进行分类。": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "该文本主要涉及股市和基金市场的表现": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "汽车服务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "集成电路": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "电气设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "电子制造": {
+        "precision": 0.5,
+        "recall": 0.7142857142857143,
+        "f1": 0.588235294117647,
+        "actual_count": 21,
+        "predicted_count": 30,
+        "correct_count": 15
+      },
+      "光伏": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "中药": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "生物柴油": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "汽车零部件": {
+        "precision": 0.6666666666666666,
+        "recall": 0.3076923076923077,
+        "f1": 0.42105263157894735,
+        "actual_count": 13,
+        "predicted_count": 6,
+        "correct_count": 4
+      },
+      "保险Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "零售": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "其他采掘": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 11,
+        "correct_count": 0
+      },
+      "商用车": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "电网设备": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "actual_count": 4,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "种植业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "轨交设备Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "新能源汽车": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 4,
+        "correct_count": 0
+      },
+      "仪器仪表": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 3,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "航空运输": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "actual_count": 2,
+        "predicted_count": 4,
+        "correct_count": 2
+      },
+      "煤炭开采": {
+        "precision": 1.0,
+        "recall": 0.35714285714285715,
+        "f1": 0.5263157894736842,
+        "actual_count": 14,
+        "predicted_count": 5,
+        "correct_count": 5
+      },
+      "金属非金属新材料": {
+        "precision": 0.16666666666666666,
+        "recall": 0.2,
+        "f1": 0.1818181818181818,
+        "actual_count": 5,
+        "predicted_count": 6,
+        "correct_count": 1
+      },
+      "新能源材料": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "通用机械": {
+        "precision": 0.45454545454545453,
+        "recall": 0.8333333333333334,
+        "f1": 0.5882352941176471,
+        "actual_count": 6,
+        "predicted_count": 11,
+        "correct_count": 5
+      },
+      "化学纤维": {
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665,
+        "actual_count": 4,
+        "predicted_count": 5,
+        "correct_count": 3
+      },
+      "工业金属": {
+        "precision": 1.0,
+        "recall": 0.4444444444444444,
+        "f1": 0.6153846153846153,
+        "actual_count": 9,
+        "predicted_count": 4,
+        "correct_count": 4
+      },
+      "旅游综合": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "专业工程": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 2,
+        "correct_count": 0
+      },
+      "计算机应用": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5,
+        "f1": 0.588235294117647,
+        "actual_count": 10,
+        "predicted_count": 7,
+        "correct_count": 5
+      },
+      "家用轻工": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "文化传媒": {
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "f1": 0.25,
+        "actual_count": 2,
+        "predicted_count": 6,
+        "correct_count": 1
+      },
+      "城市基础设施": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "海洋工程": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "光伏设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "农产品加工": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "其他行业": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "医疗器械": {
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "f1": 0.4444444444444444,
+        "actual_count": 3,
+        "predicted_count": 6,
+        "correct_count": 2
+      },
+      "电机": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "其他建材": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "actual_count": 3,
+        "predicted_count": 5,
+        "correct_count": 3
+      },
+      "化学制药": {
+        "precision": 0.625,
+        "recall": 0.5555555555555556,
+        "f1": 0.5882352941176471,
+        "actual_count": 18,
+        "predicted_count": 16,
+        "correct_count": 10
+      },
+      "航空装备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "厨电": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "运输设备": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 1
+      },
+      "电力": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "通信设备": {
+        "precision": 0.8181818181818182,
+        "recall": 1.0,
+        "f1": 0.9,
+        "actual_count": 9,
+        "predicted_count": 11,
+        "correct_count": 9
+      },
+      "金属制品": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "园区开发": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "化纤材料": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "专用设备": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285715,
+        "actual_count": 8,
+        "predicted_count": 6,
+        "correct_count": 4
+      },
+      "机场": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "综合Ⅱ": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "黄金": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "房地产开发": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 8,
+        "predicted_count": 8,
+        "correct_count": 8
+      },
+      "半导体设备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "汽车制造": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "饮料制造": {
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "actual_count": 5,
+        "predicted_count": 8,
+        "correct_count": 5
+      },
+      "元件": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 10,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "机械制造": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "一般零售": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 3,
+        "predicted_count": 3,
+        "correct_count": 3
+      },
+      "燃气": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "actual_count": 2,
+        "predicted_count": 3,
+        "correct_count": 2
+      },
+      "景点": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "白色家电": {
+        "precision": 1.0,
+        "recall": 0.7692307692307693,
+        "f1": 0.8695652173913044,
+        "actual_count": 13,
+        "predicted_count": 10,
+        "correct_count": 10
+      },
+      "造纸": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "互联网汽车": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "水泥制造": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "actual_count": 3,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "白酒": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "专业零售": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "actual_count": 1,
+        "predicted_count": 3,
+        "correct_count": 1
+      },
+      "电动汽车充电设施": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "地面兵装": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "光学光电子": {
+        "precision": 0.42857142857142855,
+        "recall": 0.23076923076923078,
+        "f1": 0.3,
+        "actual_count": 13,
+        "predicted_count": 7,
+        "correct_count": 3
+      },
+      "玻璃制造": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "航空机场": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "化工产品": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "母婴用品零售": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "视听器材": {
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "actual_count": 2,
+        "predicted_count": 3,
+        "correct_count": 1
+      },
+      "农业综合": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 6,
+        "correct_count": 0
+      },
+      "综合": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "非白酒": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 2,
+        "predicted_count": 3,
+        "correct_count": 0
+      },
+      "物流": {
+        "precision": 0.8888888888888888,
+        "recall": 1.0,
+        "f1": 0.9411764705882353,
+        "actual_count": 8,
+        "predicted_count": 9,
+        "correct_count": 8
+      },
+      "航天装备": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "新能源": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 3,
+        "correct_count": 0
+      },
+      "饲料": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "actual_count": 8,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "互联网传媒": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999,
+        "actual_count": 5,
+        "predicted_count": 3,
+        "correct_count": 3
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "index": 0,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 1,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 2,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 3,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 4,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药",
+        "生物制品"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 5,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 6,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "化学制药",
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 7,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 8,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "其他"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 9,
+      "response_labels": [
+        "医疗器械"
+      ],
+      "output_labels": [
+        "医疗器械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 10,
+      "response_labels": [
+        "医疗服务"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 11,
+      "response_labels": [
+        "生物制品",
+        "中药",
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药",
+        "生物制品"
+      ],
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 3
+    },
+    {
+      "index": 12,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 13,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "生物制品",
+        "化学制药"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 14,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 15,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 16,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药",
+        "医药商业",
+        "生物制品"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 17,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药",
+        "生物制品",
+        "医药商业"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 18,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 19,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "农业",
+        "养殖业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 20,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 21,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 22,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 23,
+      "response_labels": [
+        "医疗器械"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 24,
+      "response_labels": [
+        "中药Ⅱ",
+        "生物制品"
+      ],
+      "output_labels": [
+        "化学制药",
+        "生物制品",
+        "医疗器械"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 2
+    },
+    {
+      "index": 25,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "医药商业",
+        "生物制品",
+        "医疗器械"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 26,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "生物制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 27,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 28,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 29,
+      "response_labels": [
+        "医药商业"
+      ],
+      "output_labels": [
+        "医药商业",
+        "中药"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 30,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "其他行业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 31,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 32,
+      "response_labels": [
+        "医疗器械"
+      ],
+      "output_labels": [
+        "医疗器械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 33,
+      "response_labels": [
+        "生物制品"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 34,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "医疗器械",
+        "化学制药",
+        "医药商业"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 35,
+      "response_labels": [
+        "化学制药"
+      ],
+      "output_labels": [
+        "化学制药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 36,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 37,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "其他电子",
+        "半导体"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 38,
+      "response_labels": [
+        "其他电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "半导体"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 39,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 40,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 41,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "光学光电子",
+        "其他电子"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 42,
+      "response_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 43,
+      "response_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "output_labels": [
+        "新能源汽车",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 44,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 45,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 46,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 47,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 48,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 49,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 50,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 51,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 52,
+      "response_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 53,
+      "response_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子",
+        "饮料行业"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 54,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 55,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "光学光电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 56,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 57,
+      "response_labels": [
+        "光学光电子",
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 58,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "其他电子",
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 59,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 60,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 61,
+      "response_labels": [
+        "电子制造",
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 62,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 63,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "光学光电子",
+        "其他电子"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 64,
+      "response_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 65,
+      "response_labels": [
+        "元件",
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 66,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 67,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "家电",
+        "厨电",
+        "白电"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 68,
+      "response_labels": [
+        "电子制造",
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 69,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "光伏",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 70,
+      "response_labels": [
+        "光学光电子"
+      ],
+      "output_labels": [
+        "其他电子",
+        "其他电子Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 71,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "新能源材料",
+        "电气设备",
+        "热泵设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 72,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 73,
+      "response_labels": [
+        "半导体"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 74,
+      "response_labels": [
+        "其他电子Ⅱ"
+      ],
+      "output_labels": [
+        "其他电子",
+        "光学光电子",
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 75,
+      "response_labels": [
+        "电子制造",
+        "光学光电子"
+      ],
+      "output_labels": [
+        "锂电池材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 76,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 77,
+      "response_labels": [
+        "半导体",
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 78,
+      "response_labels": [
+        "光学光电子",
+        "电子制造"
+      ],
+      "output_labels": [
+        "光学光电子",
+        "电子制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 79,
+      "response_labels": [
+        "光学光电子",
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造",
+        "光学光电子"
+      ],
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "true_positives": 2,
+      "predicted_positives": 3,
+      "actual_positives": 2
+    },
+    {
+      "index": 80,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 81,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "半导体",
+        "电子制造",
+        "光学光电子"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 82,
+      "response_labels": [
+        "其他电子Ⅱ"
+      ],
+      "output_labels": [
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 83,
+      "response_labels": [
+        "电子制造"
+      ],
+      "output_labels": [
+        "电子制造",
+        "其他电子"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 84,
+      "response_labels": [
+        "元件"
+      ],
+      "output_labels": [
+        "其他电子",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 85,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "石油开采"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 86,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 87,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 88,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "石油开采"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 89,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 90,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 91,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "煤炭开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 92,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "煤炭开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 93,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 94,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 95,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "石油开采"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 96,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "煤炭开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 97,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 98,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "煤炭开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 99,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 100,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "石油开采",
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 101,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "煤炭开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 102,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 103,
+      "response_labels": [
+        "煤炭开采"
+      ],
+      "output_labels": [
+        "其他采掘"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 104,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 105,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "化纤材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 106,
+      "response_labels": [
+        "石油开采"
+      ],
+      "output_labels": [
+        "石油开采"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 107,
+      "response_labels": [
+        "塑料"
+      ],
+      "output_labels": [
+        "塑料"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 108,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 109,
+      "response_labels": [
+        "化学制品",
+        "化学原料"
+      ],
+      "output_labels": [
+        "化学制品",
+        "化学原料"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 110,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 111,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 112,
+      "response_labels": [
+        "化学纤维",
+        "化学制品"
+      ],
+      "output_labels": [
+        "石油化工",
+        "化学纤维"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 113,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品",
+        "石油化工"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 114,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 115,
+      "response_labels": [
+        "石油化工"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 116,
+      "response_labels": [
+        "石油化工"
+      ],
+      "output_labels": [
+        "石油化工"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 117,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 118,
+      "response_labels": [
+        "化学原料",
+        "化学制品"
+      ],
+      "output_labels": [
+        "母婴用品零售"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 119,
+      "response_labels": [
+        "化学原料"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 120,
+      "response_labels": [
+        "化学原料"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 121,
+      "response_labels": [
+        "化学原料"
+      ],
+      "output_labels": [
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 122,
+      "response_labels": [
+        "化学原料"
+      ],
+      "output_labels": [
+        "该文本主要涉及股市和基金市场的表现",
+        "未直接涉及化学制品、石油化工等行业。因此",
+        "无法归入上述类别。请提供更相关的行业信息以便进行分类。"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 123,
+      "response_labels": [
+        "化学纤维"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 124,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "新能源",
+        "光伏"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 125,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品",
+        "化学原料"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 126,
+      "response_labels": [
+        "橡胶",
+        "化学制品"
+      ],
+      "output_labels": [
+        "橡胶"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 127,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品",
+        "石油化工"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 128,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学纤维"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 129,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "生物柴油",
+        "化学制品",
+        "石油化工",
+        "化学原料",
+        "塑料"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1": 0.33333333333333337,
+      "true_positives": 1,
+      "predicted_positives": 5,
+      "actual_positives": 1
+    },
+    {
+      "index": 130,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 131,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 132,
+      "response_labels": [
+        "化学纤维"
+      ],
+      "output_labels": [
+        "化学纤维"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 133,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 134,
+      "response_labels": [
+        "石油化工",
+        "化学制品"
+      ],
+      "output_labels": [
+        "石油化工",
+        "化学原料"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 135,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 136,
+      "response_labels": [
+        "石油化工",
+        "化学纤维"
+      ],
+      "output_labels": [
+        "化学制品",
+        "化学纤维"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 137,
+      "response_labels": [
+        "石油化工"
+      ],
+      "output_labels": [
+        "石油化工"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 138,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 139,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学制品",
+        "石油化工",
+        "化学原料"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 140,
+      "response_labels": [
+        "化学制品"
+      ],
+      "output_labels": [
+        "化学纤维",
+        "化学原料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 141,
+      "response_labels": [
+        "化学原料"
+      ],
+      "output_labels": [
+        "化学制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 142,
+      "response_labels": [
+        "石油化工"
+      ],
+      "output_labels": [
+        "化学制品",
+        "石油化工"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 143,
+      "response_labels": [
+        "造纸"
+      ],
+      "output_labels": [
+        "造纸"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 144,
+      "response_labels": [
+        "包装印刷"
+      ],
+      "output_labels": [
+        "其他轻工制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 145,
+      "response_labels": [
+        "家用轻工"
+      ],
+      "output_labels": [
+        "家用轻工"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 146,
+      "response_labels": [
+        "纺织制造"
+      ],
+      "output_labels": [
+        "纺织制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 147,
+      "response_labels": [
+        "服装家纺"
+      ],
+      "output_labels": [
+        "体育产业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 148,
+      "response_labels": [
+        "纺织制造"
+      ],
+      "output_labels": [
+        "纺织制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 149,
+      "response_labels": [
+        "服装家纺"
+      ],
+      "output_labels": [
+        "服装家纺"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 150,
+      "response_labels": [
+        "服装家纺"
+      ],
+      "output_labels": [
+        "服装家纺"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 151,
+      "response_labels": [
+        "纺织制造"
+      ],
+      "output_labels": [
+        "纺织制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 152,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "光伏设备",
+        "新能源"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 153,
+      "response_labels": [
+        "其他交运设备"
+      ],
+      "output_labels": [
+        "摩托车及其他"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 154,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 155,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "汽车服务",
+        "汽车零部件"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 156,
+      "response_labels": [
+        "汽车服务"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 157,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 158,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 159,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 160,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "汽车零部件"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 161,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车",
+        "汽车零部件"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 162,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车",
+        "汽车服务"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 163,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 164,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "汽车零部件"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 165,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 166,
+      "response_labels": [
+        "汽车零部件",
+        "汽车整车"
+      ],
+      "output_labels": [
+        "新能源材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 167,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 168,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 169,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 170,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "其他交运设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 171,
+      "response_labels": [
+        "汽车零部件"
+      ],
+      "output_labels": [
+        "汽车零部件"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 172,
+      "response_labels": [
+        "商用车"
+      ],
+      "output_labels": [
+        "汽车整车"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 173,
+      "response_labels": [
+        "汽车整车"
+      ],
+      "output_labels": [
+        "汽车整车",
+        "汽车零部件"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 174,
+      "response_labels": [
+        "黄金"
+      ],
+      "output_labels": [
+        "黄金"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 175,
+      "response_labels": [
+        "金属非金属新材料"
+      ],
+      "output_labels": [
+        "新能源汽车",
+        "汽车制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 176,
+      "response_labels": [
+        "金属非金属新材料"
+      ],
+      "output_labels": [
+        "金属非金属新材料"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 177,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "金属非金属新材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 178,
+      "response_labels": [
+        "金属非金属新材料"
+      ],
+      "output_labels": [
+        "新能源",
+        "电动汽车充电设施"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 179,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "金属非金属新材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 180,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "体育产业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 181,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "金属非金属新材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 182,
+      "response_labels": [
+        "稀有金属"
+      ],
+      "output_labels": [
+        "稀有金属"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 183,
+      "response_labels": [
+        "金属非金属新材料"
+      ],
+      "output_labels": [
+        "新能源汽车",
+        "互联网汽车"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 184,
+      "response_labels": [
+        "金属非金属新材料"
+      ],
+      "output_labels": [
+        "新能源汽车",
+        "智能家居",
+        "电子制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 185,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "工业金属"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 186,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "工业金属"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 187,
+      "response_labels": [
+        "能源金属"
+      ],
+      "output_labels": [
+        "稀有金属"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 188,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "工业金属"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 189,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "工业金属"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 190,
+      "response_labels": [
+        "工业金属"
+      ],
+      "output_labels": [
+        "金属非金属新材料"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 191,
+      "response_labels": [
+        "饲料",
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 192,
+      "response_labels": [
+        "饲料"
+      ],
+      "output_labels": [
+        "种植业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 193,
+      "response_labels": [
+        "饲料"
+      ],
+      "output_labels": [
+        "农业综合",
+        "农产品加工"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 194,
+      "response_labels": [
+        "饲料",
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 195,
+      "response_labels": [
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "农业综合"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 196,
+      "response_labels": [
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 197,
+      "response_labels": [
+        "饲料",
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖",
+        "农业综合"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 198,
+      "response_labels": [
+        "饲料"
+      ],
+      "output_labels": [
+        "农业综合",
+        "种植业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 199,
+      "response_labels": [
+        "饲料",
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖",
+        "饲料"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 200,
+      "response_labels": [
+        "饲料",
+        "畜禽养殖"
+      ],
+      "output_labels": [
+        "畜禽养殖",
+        "农业综合"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 201,
+      "response_labels": [
+        "农产品加工"
+      ],
+      "output_labels": [
+        "农业综合"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 202,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "多元金融"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 203,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "多元金融"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 204,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "金属非金属新材料",
+        "能源金属"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 205,
+      "response_labels": [
+        "保险"
+      ],
+      "output_labels": [
+        "保险"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 206,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 207,
+      "response_labels": [
+        "保险"
+      ],
+      "output_labels": [
+        "多元金融",
+        "保险"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 208,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券",
+        "多元金融"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 209,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 210,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 211,
+      "response_labels": [
+        "保险"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 212,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 213,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 214,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 215,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "贵金属"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 216,
+      "response_labels": [
+        "保险"
+      ],
+      "output_labels": [
+        "保险"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 217,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 218,
+      "response_labels": [
+        "证券"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 219,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 220,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "环保能源",
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 221,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "医疗器械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 222,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "软件与信息技术服务"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 223,
+      "response_labels": [
+        "保险Ⅱ"
+      ],
+      "output_labels": [
+        "保险"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 224,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 225,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 226,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "白酒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 227,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券",
+        "多元金融"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 228,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "电子制造",
+        "半导体"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 229,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 230,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 231,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 232,
+      "response_labels": [
+        "证券Ⅱ"
+      ],
+      "output_labels": [
+        "证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 233,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "半导体设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 234,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 235,
+      "response_labels": [
+        "高低压设备"
+      ],
+      "output_labels": [
+        "电缆"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 236,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 237,
+      "response_labels": [
+        "电机"
+      ],
+      "output_labels": [
+        "电机"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 238,
+      "response_labels": [
+        "电机"
+      ],
+      "output_labels": [
+        "电机"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 239,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 240,
+      "response_labels": [
+        "电气自动化设备"
+      ],
+      "output_labels": [
+        "电气自动化设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 241,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 242,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 243,
+      "response_labels": [
+        "电源设备",
+        "高低压设备"
+      ],
+      "output_labels": [
+        "电源设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 244,
+      "response_labels": [
+        "电源设备",
+        "高低压设备"
+      ],
+      "output_labels": [
+        "电源设备",
+        "电气自动化设备"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 245,
+      "response_labels": [
+        "高低压设备"
+      ],
+      "output_labels": [
+        "电源设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 246,
+      "response_labels": [
+        "电源设备"
+      ],
+      "output_labels": [
+        "电源设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 247,
+      "response_labels": [
+        "环保工程及服务"
+      ],
+      "output_labels": [
+        "环保工程及服务"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 248,
+      "response_labels": [
+        "环保工程及服务"
+      ],
+      "output_labels": [
+        "环保工程及服务"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 249,
+      "response_labels": [
+        "电力"
+      ],
+      "output_labels": [
+        "电力"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 250,
+      "response_labels": [
+        "环保工程及服务"
+      ],
+      "output_labels": [
+        "无相关行业类别"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 251,
+      "response_labels": [
+        "燃气"
+      ],
+      "output_labels": [
+        "燃气"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 252,
+      "response_labels": [
+        "电力"
+      ],
+      "output_labels": [
+        "电力"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 253,
+      "response_labels": [
+        "燃气"
+      ],
+      "output_labels": [
+        "燃气"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 254,
+      "response_labels": [
+        "环保工程及服务"
+      ],
+      "output_labels": [
+        "环保工程及服务"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 255,
+      "response_labels": [
+        "燃气Ⅱ"
+      ],
+      "output_labels": [
+        "燃气"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 256,
+      "response_labels": [
+        "水泥制造"
+      ],
+      "output_labels": [
+        "其他建材"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 257,
+      "response_labels": [
+        "水泥制造"
+      ],
+      "output_labels": [
+        "水泥制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 258,
+      "response_labels": [
+        "玻璃制造"
+      ],
+      "output_labels": [
+        "其他建材",
+        "玻璃制造"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 259,
+      "response_labels": [
+        "其他建材"
+      ],
+      "output_labels": [
+        "其他建材"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 260,
+      "response_labels": [
+        "玻璃制造"
+      ],
+      "output_labels": [
+        "玻璃制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 261,
+      "response_labels": [
+        "水泥制造"
+      ],
+      "output_labels": [
+        "水泥制造"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 262,
+      "response_labels": [
+        "其他建材"
+      ],
+      "output_labels": [
+        "其他建材"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 263,
+      "response_labels": [
+        "其他建材"
+      ],
+      "output_labels": [
+        "其他建材"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 264,
+      "response_labels": [
+        "景点"
+      ],
+      "output_labels": [
+        "旅游综合",
+        "景点",
+        "酒店"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 265,
+      "response_labels": [
+        "基础建设"
+      ],
+      "output_labels": [
+        "基础建设",
+        "房屋建设"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 266,
+      "response_labels": [
+        "基础建设"
+      ],
+      "output_labels": [
+        "基础建设",
+        "房屋建设"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 267,
+      "response_labels": [
+        "基础建设"
+      ],
+      "output_labels": [
+        "专业工程",
+        "基础建设"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 268,
+      "response_labels": [
+        "装修装饰"
+      ],
+      "output_labels": [
+        "基础建设",
+        "房屋建设"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 269,
+      "response_labels": [
+        "专业工程"
+      ],
+      "output_labels": [
+        "基础建设",
+        "房屋建设"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 270,
+      "response_labels": [
+        "装修装饰"
+      ],
+      "output_labels": [
+        "装修装饰",
+        "专业工程"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 271,
+      "response_labels": [
+        "装修装饰Ⅱ"
+      ],
+      "output_labels": [
+        "装修装饰"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 272,
+      "response_labels": [
+        "基础建设"
+      ],
+      "output_labels": [
+        "基础建设"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 273,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 274,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 275,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 276,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 277,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 278,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 279,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 280,
+      "response_labels": [
+        "房地产开发"
+      ],
+      "output_labels": [
+        "房地产开发",
+        "园区开发"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 281,
+      "response_labels": [
+        "船舶制造"
+      ],
+      "output_labels": [
+        "海洋工程",
+        "智能装备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 282,
+      "response_labels": [
+        "航空装备"
+      ],
+      "output_labels": [
+        "航天装备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 283,
+      "response_labels": [
+        "地面兵装"
+      ],
+      "output_labels": [
+        "集成电路"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 284,
+      "response_labels": [
+        "航空装备Ⅱ"
+      ],
+      "output_labels": [
+        "航空装备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 285,
+      "response_labels": [
+        "营销传播"
+      ],
+      "output_labels": [
+        "营销传播"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 286,
+      "response_labels": [
+        "互联网传媒"
+      ],
+      "output_labels": [
+        "互联网传媒"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 287,
+      "response_labels": [
+        "互联网传媒"
+      ],
+      "output_labels": [
+        "互联网传媒"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 288,
+      "response_labels": [
+        "文化传媒"
+      ],
+      "output_labels": [
+        "文化传媒"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 289,
+      "response_labels": [
+        "互联网传媒"
+      ],
+      "output_labels": [
+        "文化传媒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 290,
+      "response_labels": [
+        "营销传播"
+      ],
+      "output_labels": [
+        "文化传媒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 291,
+      "response_labels": [
+        "互联网传媒"
+      ],
+      "output_labels": [
+        "互联网传媒",
+        "文化传媒"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 292,
+      "response_labels": [
+        "营销传播"
+      ],
+      "output_labels": [
+        "文化传媒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 293,
+      "response_labels": [
+        "文化传媒"
+      ],
+      "output_labels": [
+        "教育培训"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 294,
+      "response_labels": [
+        "互联网传媒"
+      ],
+      "output_labels": [
+        "文化传媒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 295,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "专用设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 296,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "运输设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 297,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "专用设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 298,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 299,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "专用设备",
+        "通用机械"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 300,
+      "response_labels": [
+        "运输设备"
+      ],
+      "output_labels": [
+        "通用设备",
+        "轨交设备Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 301,
+      "response_labels": [
+        "运输设备"
+      ],
+      "output_labels": [
+        "运输设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 302,
+      "response_labels": [
+        "仪器仪表"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 303,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 304,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 305,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 306,
+      "response_labels": [
+        "仪器仪表"
+      ],
+      "output_labels": [
+        "通用设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 307,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 308,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "专用设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 309,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "专用设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 310,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "专用设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 311,
+      "response_labels": [
+        "仪器仪表"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 312,
+      "response_labels": [
+        "通用设备"
+      ],
+      "output_labels": [
+        "家居建材",
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 313,
+      "response_labels": [
+        "通用机械"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 314,
+      "response_labels": [
+        "专用设备"
+      ],
+      "output_labels": [
+        "金属制品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 315,
+      "response_labels": [
+        "通用设备"
+      ],
+      "output_labels": [
+        "通用设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 316,
+      "response_labels": [
+        "通用设备"
+      ],
+      "output_labels": [
+        "通用机械"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 317,
+      "response_labels": [
+        "计算机设备"
+      ],
+      "output_labels": [
+        "计算机应用",
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 318,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机设备"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 319,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 320,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机应用"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 321,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 322,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机应用"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 323,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机应用"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 324,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机应用",
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 325,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机设备",
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 326,
+      "response_labels": [
+        "计算机设备"
+      ],
+      "output_labels": [
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 327,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "计算机应用",
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 328,
+      "response_labels": [
+        "计算机应用"
+      ],
+      "output_labels": [
+        "医药商业"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 329,
+      "response_labels": [
+        "IT服务Ⅱ"
+      ],
+      "output_labels": [
+        "计算机应用",
+        "IT服务Ⅱ"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 330,
+      "response_labels": [
+        "IT服务Ⅱ"
+      ],
+      "output_labels": [
+        "IT服务Ⅱ"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 331,
+      "response_labels": [
+        "IT服务Ⅱ"
+      ],
+      "output_labels": [
+        "IT服务"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 332,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 333,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 334,
+      "response_labels": [
+        "视听器材"
+      ],
+      "output_labels": [
+        "视听器材"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 335,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "视听器材"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 336,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "智能家居"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 337,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 338,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 339,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 340,
+      "response_labels": [
+        "白色家电",
+        "视听器材"
+      ],
+      "output_labels": [
+        "机械制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 341,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 342,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 343,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 344,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电",
+        "视听器材"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 345,
+      "response_labels": [
+        "白色家电"
+      ],
+      "output_labels": [
+        "白色家电"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 346,
+      "response_labels": [
+        "一般零售"
+      ],
+      "output_labels": [
+        "专业零售",
+        "一般零售"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 347,
+      "response_labels": [
+        "一般零售"
+      ],
+      "output_labels": [
+        "一般零售"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 348,
+      "response_labels": [
+        "专业零售"
+      ],
+      "output_labels": [
+        "贸易",
+        "专业零售"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 349,
+      "response_labels": [
+        "一般零售"
+      ],
+      "output_labels": [
+        "专业零售",
+        "一般零售"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 350,
+      "response_labels": [
+        "通信运营"
+      ],
+      "output_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 351,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 352,
+      "response_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "output_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 353,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 354,
+      "response_labels": [
+        "通信运营"
+      ],
+      "output_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 355,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 356,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 357,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 358,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 359,
+      "response_labels": [
+        "通信运营"
+      ],
+      "output_labels": [
+        "通信运营"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 360,
+      "response_labels": [
+        "通信设备"
+      ],
+      "output_labels": [
+        "通信设备"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 361,
+      "response_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "output_labels": [
+        "通信设备",
+        "通信运营"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 362,
+      "response_labels": [
+        "食品加工"
+      ],
+      "output_labels": [
+        "饮料乳品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 363,
+      "response_labels": [
+        "饮料制造"
+      ],
+      "output_labels": [
+        "饮料制造",
+        "非白酒"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 364,
+      "response_labels": [
+        "食品加工"
+      ],
+      "output_labels": [
+        "非白酒"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 365,
+      "response_labels": [
+        "食品加工"
+      ],
+      "output_labels": [
+        "调味发酵品Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 366,
+      "response_labels": [
+        "饮料制造"
+      ],
+      "output_labels": [
+        "饮料制造",
+        "非白酒"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 367,
+      "response_labels": [
+        "饮料制造"
+      ],
+      "output_labels": [
+        "饮料制造",
+        "食品加工",
+        "调味发酵品Ⅱ"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 368,
+      "response_labels": [
+        "饮料制造"
+      ],
+      "output_labels": [
+        "饮料制造",
+        "调味发酵品Ⅱ"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 369,
+      "response_labels": [
+        "非白酒"
+      ],
+      "output_labels": [
+        "饮料制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 370,
+      "response_labels": [
+        "调味发酵品Ⅱ"
+      ],
+      "output_labels": [
+        "调味发酵品Ⅱ"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 371,
+      "response_labels": [
+        "非白酒"
+      ],
+      "output_labels": [
+        "饮料制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 372,
+      "response_labels": [
+        "调味发酵品Ⅱ"
+      ],
+      "output_labels": [
+        "食品加工",
+        "饮料制造"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 373,
+      "response_labels": [
+        "饮料乳品"
+      ],
+      "output_labels": [
+        "饮料乳品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 374,
+      "response_labels": [
+        "调味发酵品Ⅱ"
+      ],
+      "output_labels": [
+        "食品加工"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 375,
+      "response_labels": [
+        "饮料制造"
+      ],
+      "output_labels": [
+        "零售",
+        "食品加工",
+        "饮料制造"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 376,
+      "response_labels": [
+        "钢铁"
+      ],
+      "output_labels": [
+        "钢铁"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 377,
+      "response_labels": [
+        "钢铁"
+      ],
+      "output_labels": [
+        "钢铁"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 378,
+      "response_labels": [
+        "特钢Ⅱ",
+        "钢铁"
+      ],
+      "output_labels": [
+        "钢铁"
+      ],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 2
+    },
+    {
+      "index": 379,
+      "response_labels": [
+        "铁路运输"
+      ],
+      "output_labels": [
+        "铁路运输"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 380,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 381,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 382,
+      "response_labels": [
+        "航空运输"
+      ],
+      "output_labels": [
+        "航空运输"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 383,
+      "response_labels": [
+        "航空运输"
+      ],
+      "output_labels": [
+        "航空运输"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 384,
+      "response_labels": [
+        "航运"
+      ],
+      "output_labels": [
+        "航运",
+        "物流"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 385,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 386,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 387,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 388,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "航空运输",
+        "物流",
+        "机场"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 389,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 390,
+      "response_labels": [
+        "航运港口"
+      ],
+      "output_labels": [
+        "航运",
+        "港口"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 391,
+      "response_labels": [
+        "物流"
+      ],
+      "output_labels": [
+        "物流"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 392,
+      "response_labels": [
+        "铁路公路"
+      ],
+      "output_labels": [
+        "环保服务",
+        "城市基础设施"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 393,
+      "response_labels": [
+        "航空机场"
+      ],
+      "output_labels": [
+        "航空运输"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 394,
+      "response_labels": [
+        "综合Ⅱ"
+      ],
+      "output_labels": [
+        "综合"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 395,
+      "response_labels": [
+        "电网设备"
+      ],
+      "output_labels": [
+        "其他电源设备Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 396,
+      "response_labels": [
+        "电网设备"
+      ],
+      "output_labels": [
+        "其他电源设备Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 397,
+      "response_labels": [
+        "电网设备"
+      ],
+      "output_labels": [
+        "电网设备",
+        "其他电源设备Ⅱ"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 398,
+      "response_labels": [
+        "电网设备"
+      ],
+      "output_labels": [
+        "其他电源设备Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 399,
+      "response_labels": [
+        "农化制品"
+      ],
+      "output_labels": [
+        "农化制品"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 400,
+      "response_labels": [
+        "农化制品"
+      ],
+      "output_labels": [
+        "化工产品"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 401,
+      "response_labels": [
+        "农化制品"
+      ],
+      "output_labels": [
+        "非金属材料Ⅱ"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    }
+  ]
+}

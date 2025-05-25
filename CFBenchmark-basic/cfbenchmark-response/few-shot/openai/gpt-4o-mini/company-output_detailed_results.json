@@ -1,0 +1,2188 @@
+{
+  "task_type": "classification",
+  "classification_type": "company",
+  "total_samples": 50,
+  "metrics": {
+    "average_f1": 0.7763256217466744,
+    "average_precision": 0.7425555555555556,
+    "average_recall": 0.8559047619047618
+  },
+  "label_statistics": {
+    "total_unique_labels": 159,
+    "label_metrics": {
+      "东方财富": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "上坤地产": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "沃特股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "京东方": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "实地集团": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "消费蓝筹": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "新力地产": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "天齐锂业": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中国中铁股份有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "兴实新材料": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "侨银股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "金龙机电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中铁一局": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中复神鹰": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天康生物": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "GSMA": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "九洲药业": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中润华隆投资发展集团有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "正荣地产": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "北京香江": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "华夏银行": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "东方电气": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "济南财投新动能投资管理有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "国广龙德(北京)投资基金管理有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "华星光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "Vestas": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "碧桂园": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "TCL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中国电信": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "昭衍新药": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "东华能源": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "兆驰股份": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "抖音": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "南下香港": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "西门子歌美飒": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "国广龙德": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "绿地控股": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "东华石油长江": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "振江股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中原传媒": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "龙光集团": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "凯美特气": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "杭州余杭地铁上盖物业开发有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中银国际证券股份有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中国平安": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "深圳市卓翼科技股份有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "吉林精功": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天风证券": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 2,
+        "predicted_count": 2,
+        "correct_count": 2
+      },
+      "中国": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "华远地产": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "精工科技": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "科技成长": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "紫鑫药业": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "西部创业": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "华策影视": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "翁伟炜": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "A股": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "济南财投": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "洪都航空": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "小米": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "申万宏源": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "中来股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "万华化学": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "奥园集团": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天津泰达洁净材料有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中银国际": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "拓普集团": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "晶电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "乾照光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "腾信股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "上海电气": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "鸿利智汇": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "利亚德": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "家电": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "朗新科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "康佳": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中国移动": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天津泰达股份有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "江苏雷利": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "万兴科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "粤桂股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "锦富技术": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中铁建工": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "荣盛发展": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "美好置业": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "金美欧": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "浙江科赛": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "阳光电源": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "云南城投": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "集邦咨询": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "万兴喵影": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "北京奥宸": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "群创光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "南京新城发展股份有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "赵一波": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "山推股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "隆平高科": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中简科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "济民制药": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "精功科技": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "红旗连锁": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中石科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中信集团": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "北京奥宸网络科技有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "大龙地产": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天津泰达能源集团有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "泛海控股": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "隆达": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "天津泰达都市开发建设有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "苹果": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "农林牧渔": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "友达": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "上海银行": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "华通热力": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "三星": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "LG": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中原证券": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "上实发展": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "Nordex": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "卓翼科技": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "嘉凯城": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "吉林碳谷": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "晶方科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "东方财富证券": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "鸿利智": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "上港集团": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "泰达能源": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "中国中铁": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "北京香江腾盛文化投资中心(有限合伙)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "北京华力方元科技有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "英联股份": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "桃李面包": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "申万宏源证券": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中铁电气化局": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "北京华一": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "创维": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "金龙控股集团有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "华力创通": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "安图生物": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "国防军工": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "国星光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "快手": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "三安光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "新城控股": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "南京聚隆": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "NEXTracker US": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "泰达股份": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "ENERCON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "晓程科技": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "Unimacts LLC": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中泛控股": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "天津泰达环保有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "华灿光电": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "北京华一银河科技有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "光威复材": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "天津顺航海运有限公司": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 0,
+        "predicted_count": 1,
+        "correct_count": 0
+      },
+      "中国联通": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      },
+      "中润华隆": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "actual_count": 1,
+        "predicted_count": 0,
+        "correct_count": 0
+      },
+      "长航凤凰": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "actual_count": 1,
+        "predicted_count": 1,
+        "correct_count": 1
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "index": 0,
+      "response_labels": [
+        "天康生物"
+      ],
+      "output_labels": [
+        "天康生物"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 1,
+      "response_labels": [
+        "腾信股份",
+        "济南财投",
+        "北京香江",
+        "北京华一",
+        "国广龙德",
+        "北京奥宸"
+      ],
+      "output_labels": [
+        "腾信股份",
+        "济南财投新动能投资管理有限公司",
+        "北京香江腾盛文化投资中心(有限合伙)",
+        "北京华一银河科技有限公司",
+        "国广龙德(北京)投资基金管理有限公司",
+        "北京奥宸网络科技有限公司"
+      ],
+      "precision": 0.16666666666666666,
+      "recall": 0.16666666666666666,
+      "f1": 0.16666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 6,
+      "actual_positives": 6
+    },
+    {
+      "index": 2,
+      "response_labels": [
+        "洪都航空"
+      ],
+      "output_labels": [
+        "洪都航空"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 3,
+      "response_labels": [
+        "安图生物"
+      ],
+      "output_labels": [
+        "安图生物"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 4,
+      "response_labels": [
+        "西部创业"
+      ],
+      "output_labels": [
+        "西部创业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 5,
+      "response_labels": [
+        "中原传媒"
+      ],
+      "output_labels": [
+        "中原传媒"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 6,
+      "response_labels": [
+        "九洲药业"
+      ],
+      "output_labels": [
+        "九洲药业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 7,
+      "response_labels": [
+        "中国联通",
+        "中国移动",
+        "中国电信"
+      ],
+      "output_labels": [
+        "中国",
+        "中国移动",
+        "中国电信",
+        "中国联通",
+        "GSMA"
+      ],
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.7499999999999999,
+      "true_positives": 3,
+      "predicted_positives": 5,
+      "actual_positives": 3
+    },
+    {
+      "index": 8,
+      "response_labels": [
+        "紫鑫药业"
+      ],
+      "output_labels": [
+        "紫鑫药业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 9,
+      "response_labels": [
+        "凯美特气"
+      ],
+      "output_labels": [
+        "凯美特气"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 10,
+      "response_labels": [
+        "锦富技术"
+      ],
+      "output_labels": [
+        "锦富技术"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 11,
+      "response_labels": [
+        "红旗连锁"
+      ],
+      "output_labels": [
+        "红旗连锁"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 12,
+      "response_labels": [
+        "中石科技"
+      ],
+      "output_labels": [
+        "中石科技"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 13,
+      "response_labels": [
+        "中国中铁"
+      ],
+      "output_labels": [
+        "中国中铁股份有限公司",
+        "中铁电气化局",
+        "中铁建工",
+        "中铁一局"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 4,
+      "actual_positives": 1
+    },
+    {
+      "index": 14,
+      "response_labels": [
+        "卓翼科技"
+      ],
+      "output_labels": [
+        "深圳市卓翼科技股份有限公司"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 15,
+      "response_labels": [
+        "江苏雷利"
+      ],
+      "output_labels": [
+        "江苏雷利"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 16,
+      "response_labels": [
+        "绿地控股"
+      ],
+      "output_labels": [
+        "杭州余杭地铁上盖物业开发有限公司",
+        "绿地控股"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 17,
+      "response_labels": [
+        "天齐锂业"
+      ],
+      "output_labels": [
+        "天齐锂业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 18,
+      "response_labels": [
+        "申万宏源",
+        "万华化学"
+      ],
+      "output_labels": [
+        "万华化学",
+        "申万宏源证券"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 19,
+      "response_labels": [
+        "上海银行"
+      ],
+      "output_labels": [
+        "上海银行"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 20,
+      "response_labels": [
+        "中来股份",
+        "济民制药"
+      ],
+      "output_labels": [
+        "济民制药",
+        "中来股份"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 21,
+      "response_labels": [
+        "桃李面包"
+      ],
+      "output_labels": [
+        "桃李面包"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 22,
+      "response_labels": [
+        "华通热力"
+      ],
+      "output_labels": [
+        "华通热力",
+        "赵一波"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 23,
+      "response_labels": [
+        "沃特股份"
+      ],
+      "output_labels": [
+        "沃特股份",
+        "浙江科赛"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 24,
+      "response_labels": [
+        "光威复材",
+        "吉林碳谷",
+        "中简科技",
+        "中复神鹰",
+        "吉林精功",
+        "拓普集团",
+        "精工科技"
+      ],
+      "output_labels": [
+        "精功科技",
+        "吉林精功",
+        "光威复材",
+        "吉林碳谷",
+        "中简科技",
+        "中复神鹰"
+      ],
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307692,
+      "true_positives": 5,
+      "predicted_positives": 6,
+      "actual_positives": 7
+    },
+    {
+      "index": 25,
+      "response_labels": [
+        "长航凤凰"
+      ],
+      "output_labels": [
+        "长航凤凰",
+        "天津顺航海运有限公司"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 26,
+      "response_labels": [
+        "万兴科技"
+      ],
+      "output_labels": [
+        "万兴科技",
+        "抖音",
+        "快手",
+        "万兴喵影"
+      ],
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4,
+      "true_positives": 1,
+      "predicted_positives": 4,
+      "actual_positives": 1
+    },
+    {
+      "index": 27,
+      "response_labels": [
+        "金龙机电"
+      ],
+      "output_labels": [
+        "金龙机电",
+        "金龙控股集团有限公司",
+        "金美欧"
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 3,
+      "actual_positives": 1
+    },
+    {
+      "index": 28,
+      "response_labels": [
+        "晶方科技"
+      ],
+      "output_labels": [
+        "晶方科技"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 29,
+      "response_labels": [
+        "山推股份"
+      ],
+      "output_labels": [
+        "山推股份"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 30,
+      "response_labels": [
+        "龙光集团",
+        "荣盛发展",
+        "新城控股",
+        "华远地产",
+        "上坤地产",
+        "大龙地产",
+        "上实发展",
+        "泛海控股",
+        "中泛控股",
+        "奥园集团",
+        "碧桂园",
+        "实地集团",
+        "正荣地产",
+        "云南城投"
+      ],
+      "output_labels": [
+        "龙光集团",
+        "荣盛发展",
+        "新城控股",
+        "华远地产",
+        "上坤地产",
+        "大龙地产",
+        "上实发展",
+        "泛海控股",
+        "嘉凯城",
+        "云南城投",
+        "新力地产",
+        "奥园集团"
+      ],
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307692,
+      "true_positives": 10,
+      "predicted_positives": 12,
+      "actual_positives": 14
+    },
+    {
+      "index": 31,
+      "response_labels": [
+        "东华能源"
+      ],
+      "output_labels": [
+        "东华能源",
+        "东华石油长江"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 32,
+      "response_labels": [
+        "粤桂股份"
+      ],
+      "output_labels": [
+        "粤桂股份"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 33,
+      "response_labels": [
+        "振江股份",
+        "Unimacts LLC",
+        "阳光电源",
+        "NEXTracker US",
+        "上海电气",
+        "ENERCON",
+        "西门子歌美飒",
+        "东方电气",
+        "Nordex",
+        "Vestas"
+      ],
+      "output_labels": [
+        "振江股份",
+        "Unimacts LLC",
+        "阳光电源",
+        "NEXTracker US",
+        "上海电气",
+        "ENERCON",
+        "西门子歌美飒",
+        "东方电气",
+        "Nordex",
+        "Vestas"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 10,
+      "predicted_positives": 10,
+      "actual_positives": 10
+    },
+    {
+      "index": 34,
+      "response_labels": [
+        "南京聚隆"
+      ],
+      "output_labels": [
+        "南京聚隆"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 35,
+      "response_labels": [
+        "晓程科技"
+      ],
+      "output_labels": [
+        "晓程科技"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 36,
+      "response_labels": [
+        "华力创通"
+      ],
+      "output_labels": [
+        "华力创通",
+        "北京华力方元科技有限公司"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 37,
+      "response_labels": [
+        "美好置业"
+      ],
+      "output_labels": [
+        "美好置业"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 38,
+      "response_labels": [
+        "三星",
+        "TCL",
+        "LG",
+        "群创光电",
+        "小米",
+        "康佳",
+        "创维",
+        "集邦咨询",
+        "苹果",
+        "晶电",
+        "隆达",
+        "友达",
+        "京东方",
+        "华灿光电",
+        "三安光电",
+        "华星光电",
+        "乾照光电",
+        "国星光电",
+        "鸿利智汇",
+        "兆驰股份"
+      ],
+      "output_labels": [
+        "三星",
+        "TCL",
+        "LG",
+        "群创光电",
+        "小米",
+        "康佳",
+        "创维",
+        "苹果",
+        "晶电",
+        "友达",
+        "三安光电",
+        "华星光电",
+        "京东方",
+        "华灿光电",
+        "利亚德",
+        "乾照光电",
+        "国星光电",
+        "鸿利智"
+      ],
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1": 0.8421052631578948,
+      "true_positives": 16,
+      "predicted_positives": 18,
+      "actual_positives": 20
+    },
+    {
+      "index": 39,
+      "response_labels": [
+        "隆平高科"
+      ],
+      "output_labels": [
+        "隆平高科",
+        "中信集团"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 40,
+      "response_labels": [
+        "中原证券"
+      ],
+      "output_labels": [
+        "南下香港",
+        "A股",
+        "家电",
+        "国防军工",
+        "农林牧渔",
+        "消费蓝筹",
+        "科技成长"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 7,
+      "actual_positives": 1
+    },
+    {
+      "index": 41,
+      "response_labels": [
+        "上港集团"
+      ],
+      "output_labels": [
+        "上港集团"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 42,
+      "response_labels": [
+        "东方财富"
+      ],
+      "output_labels": [
+        "东方财富证券"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 43,
+      "response_labels": [
+        "兴实新材料",
+        "泰达能源",
+        "中润华隆",
+        "华夏银行",
+        "泰达股份"
+      ],
+      "output_labels": [
+        "天津泰达股份有限公司",
+        "兴实新材料",
+        "华夏银行",
+        "天津泰达能源集团有限公司",
+        "中润华隆投资发展集团有限公司",
+        "南京新城发展股份有限公司",
+        "天津泰达环保有限公司",
+        "天津泰达都市开发建设有限公司",
+        "天津泰达洁净材料有限公司"
+      ],
+      "precision": 0.2222222222222222,
+      "recall": 0.4,
+      "f1": 0.2857142857142857,
+      "true_positives": 2,
+      "predicted_positives": 9,
+      "actual_positives": 5
+    },
+    {
+      "index": 44,
+      "response_labels": [
+        "天风证券",
+        "华策影视"
+      ],
+      "output_labels": [
+        "华策影视",
+        "天风证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 45,
+      "response_labels": [
+        "昭衍新药"
+      ],
+      "output_labels": [
+        "昭衍新药"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 46,
+      "response_labels": [
+        "朗新科技"
+      ],
+      "output_labels": [
+        "朗新科技"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 1,
+      "predicted_positives": 1,
+      "actual_positives": 1
+    },
+    {
+      "index": 47,
+      "response_labels": [
+        "天风证券",
+        "侨银股份"
+      ],
+      "output_labels": [
+        "侨银股份",
+        "天风证券"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 2,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    },
+    {
+      "index": 48,
+      "response_labels": [
+        "英联股份"
+      ],
+      "output_labels": [
+        "英联股份",
+        "翁伟炜"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 1
+    },
+    {
+      "index": 49,
+      "response_labels": [
+        "中国平安",
+        "中银国际"
+      ],
+      "output_labels": [
+        "中国平安",
+        "中银国际证券股份有限公司"
+      ],
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "true_positives": 1,
+      "predicted_positives": 2,
+      "actual_positives": 2
+    }
+  ]
+}

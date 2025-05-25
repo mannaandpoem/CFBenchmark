@@ -2,7 +2,7 @@ from CFBenchmark import CFBenchmark
 if __name__=='__main__':
 
     # EXPERIMENT SETUP
-    api_key = "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"  # Replace with your actual API key
+    api_key = "sk-xxx"  # Replace with your actual API key
     base_url = "https://openrouter.ai/api/v1"  # Default OpenAI API URL, can be changed for other endpoints
     # model_name = "google/gemini-2.0-flash-001"  # or any other OpenAI model like "gpt-4"
     model_name = "openai/gpt-4.1-mini"  # or any other OpenAI model like "gpt-4"
@@ -19,6 +19,7 @@ if __name__=='__main__':
     response_path = '/Users/manna/PycharmProjects/CFBenchmark/CFBenchmark-basic/cfbenchmark-response'  # Path to store model responses
     scores_path = '../cfbenchmark-scores'  # Path to store evaluation scores
     benchmark_path = '/Users/manna/PycharmProjects/CFBenchmark/CFBenchmark-basic/data'  # Path to benchmark data
+    embedding_model_path = 'BAAI/bge-large-zh-v1.5'  # Path to embedding model
 
     # Create CFBenchmark instance
     cfb = CFBenchmark(
@@ -29,7 +30,10 @@ if __name__=='__main__':
         test_type=test_type,
         response_path=response_path,
         scores_path=scores_path,
-        benchmark_path=benchmark_path
+        benchmark_path=benchmark_path,
+        embedding_model_path=embedding_model_path,
+        max_workers=4,  # Number of parallel workers
+        api_rate_limit=0.5  # Minimum seconds between API calls
     )
     
     # Run the benchmark

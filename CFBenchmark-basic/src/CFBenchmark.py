@@ -8,6 +8,10 @@ from openai import OpenAI
 import time
 from typing import Dict, List, Any, Optional
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
+import threading
+from modelscope import AutoModel, AutoTokenizer
 
 class CFBenchmark:
     def __init__(self,
@@ -18,7 +22,10 @@ class CFBenchmark:
                  test_type: str = "few-shot",
                  response_path: str = "../cfbenchmark-response",
                  scores_path: str = "../cfbenchmark-scores",
-                 benchmark_path: str = "../data"
+                 benchmark_path: str = "../data",
+                 embedding_model_path: str = "BAAI/bge-large-zh-v1.5",
+                 max_workers: int = 4,
+                 api_rate_limit: float = 1.0
                  ) -> None:
         
         # Set up OpenAI client
@@ -33,9 +40,14 @@ class CFBenchmark:
         self.response_path = response_path
         self.scores_path = scores_path
         self.benchmark_path = benchmark_path
+        self.embedding_model_path = embedding_model_path
+        self.max_workers = max_workers
+        self.api_rate_limit = api_rate_limit  # seconds between API calls
+        self._rate_limit_lock = threading.Lock()
+        self._last_api_call = 0
 
         self.classifications = [
-            'company', 'product', 'sector', 'event', 
+            'company', 'product', 'sector', 'event',
             'sentiment', 'summary', 'risk', 'suggestion'
         ]
 
@@ -66,14 +78,89 @@ class CFBenchmark:
             print(f"Warning: labels_info.pkl not found, using empty labels dictionary")
             self.labels = {cls: [] for cls in self.classifications}
         
-        # Load BGE embedding model for evaluation (optional)
-        self.embedding_model = None
+        # Load embedding model using modelscope (following the provided example pattern)
+        self.t2v_tokenizer = None
+        self.t2v_model = None
         try:
-            from sentence_transformers import SentenceTransformer
-            self.embedding_model = SentenceTransformer('BAAI/bge-large-zh-v1.5')
-            print("Loaded SentenceTransformer model for evaluation")
-        except (ImportError, Exception) as e:
-            print(f"Warning: SentenceTransformer not available ({str(e)}). Cosine similarity metrics will use a simpler method.")
+            print(f"Loading embedding model from: {self.embedding_model_path}")
+            self.t2v_tokenizer = AutoTokenizer.from_pretrained(self.embedding_model_path)
+            self.t2v_model = AutoModel.from_pretrained(self.embedding_model_path)
+            self.t2v_model.eval()
+            print("✓ Loaded embedding model using modelscope")
+        except Exception as e:
+            print(f"⚠️  Warning: Error loading embedding model ({str(e)}). Using enhanced TF-IDF based cosine similarity instead.")
+            print("   To use the embedding model, ensure the model path is correct and modelscope is installed.")
+            self.t2v_tokenizer = None
+            self.t2v_model = None
+    
+    @staticmethod
+    def install_optional_dependencies():
+        """Helper method to install optional dependencies for better performance."""
+        try:
+            import subprocess
+            import sys
+            
+            print("Installing optional dependencies for enhanced performance...")
+            
+            # Install modelscope
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "modelscope"])
+            
+            # Install torch if not available
+            try:
+                import torch
+            except ImportError:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
+            
+            # Install datasets if not available
+            try:
+                import datasets
+            except ImportError:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "datasets"])
+            
+            print("✓ Optional dependencies installed successfully!")
+            print("  Please restart your Python session to use the enhanced features.")
+            
+        except Exception as e:
+            print(f"❌ Error installing dependencies: {str(e)}")
+            print("   Please install manually: pip install modelscope torch datasets")
+    
+    def _rate_limited_api_call(self, instruction: str, classes: str) -> str:
+        """Rate-limited API call wrapper for thread safety."""
+        with self._rate_limit_lock:
+            current_time = time.time()
+            time_since_last_call = current_time - self._last_api_call
+            if time_since_last_call < self.api_rate_limit:
+                time.sleep(self.api_rate_limit - time_since_last_call)
+            self._last_api_call = time.time()
+        
+        # Use OpenAI API for generation
+        max_retries = 3
+        retry_delay = 2
+        
+        for attempt in range(max_retries):
+            try:
+                response = self.client.chat.completions.create(
+                    model=self.modelname,
+                    messages=[
+                        {"role": "user", "content": instruction}
+                    ],
+                    max_tokens=512 if (classes == 'summary' or classes == 'suggestion' or classes == 'risk') else 64,
+                    temperature=0.0
+                )
+                
+                generated_text = response.choices[0].message.content.strip()
+                return generated_text
+                
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    print(f"Error: {str(e)}. Retrying in {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                    retry_delay *= 2
+                else:
+                    print(f"Failed after {max_retries} attempts: {str(e)}")
+                    return "API Error"
+        
+        return "API Error"
     
     def get_row_response(self, row: Dict[str, Any], classes: str, types: str) -> str:
         context = row['input']    
@@ -95,44 +182,19 @@ class CFBenchmark:
 
         instruction = instruction + '\n回答：'
         
-        # Use OpenAI API for generation
-        max_retries = 3
-        retry_delay = 2
+        # Use rate-limited API call
+        generated_text = self._rate_limited_api_call(instruction, classes)
         
-        for attempt in range(max_retries):
-            try:
-                response = self.client.chat.completions.create(
-                    model=self.modelname,
-                    messages=[
-                        {"role": "user", "content": instruction}
-                    ],
-                    max_tokens=512 if (classes == 'summary' or classes == 'suggestion' or classes == 'risk') else 64,
-                    temperature=0.0
-                )
-                
-                generated_text = response.choices[0].message.content.strip()
-                
-                # Process response to match the expected format
-                if types == 'zero-shot':
-                    if '回答：' in generated_text:
-                        generated_text = generated_text.split('回答：', 1)[-1]
-                else:
-                    if '回答：' in generated_text:
-                        generated_text = generated_text.split('回答：', 4)[-1]
-                
-                generated_text = generated_text.split('\n', 1)[0].strip()
-                return generated_text
-                
-            except Exception as e:
-                if attempt < max_retries - 1:
-                    print(f"Error: {str(e)}. Retrying in {retry_delay} seconds...")
-                    time.sleep(retry_delay)
-                    retry_delay *= 2
-                else:
-                    print(f"Failed after {max_retries} attempts: {str(e)}")
-                    return "API Error"
+        # Process response to match the expected format
+        if types == 'zero-shot':
+            if '回答：' in generated_text:
+                generated_text = generated_text.split('回答：', 1)[-1]
+        else:
+            if '回答：' in generated_text:
+                generated_text = generated_text.split('回答：', 4)[-1]
         
-        return "API Error"
+        generated_text = generated_text.split('\n', 1)[0].strip()
+        return generated_text
 
     def load_benchmark_data(self, item):
         """Load benchmark data from files directly instead of using datasets library."""
@@ -197,6 +259,16 @@ class CFBenchmark:
             # Return sample data as fallback
             return pd.DataFrame(sample_data)
 
+    def _process_single_row(self, row_data: tuple) -> tuple:
+        """Helper method to process a single row for parallel execution."""
+        index, row, item, test_type = row_data
+        try:
+            output = self.get_row_response(row, item, test_type)
+            return index, output
+        except Exception as e:
+            print(f"Error processing row {index}: {str(e)}")
+            return index, "API Error"
+
     def get_model_results(self):
         save_dir = os.path.join(self.response_path, self.test_type)
         save_dir = os.path.join(save_dir, self.modelname)
@@ -204,7 +276,7 @@ class CFBenchmark:
             os.makedirs(save_dir)
         
         print(f"benchmark_path: {self.benchmark_path}")
-        self.classifications = ["sector", "event"]
+        # self.classifications = ["suggestion"]
         print(f"classifications: {self.classifications}")
         
         for item in self.classifications:
@@ -254,6 +326,9 @@ class CFBenchmark:
                 print(f"Unexpected error with datasets: {str(e)}")
                 df = self.load_benchmark_data(item)
             
+            # # FIXME: Test: first 50 for df
+            # df = df.head(50)
+
             # Ensure we have a valid dataframe with required columns
             if df is None or df.empty:
                 print(f"Creating sample data for {item}")
@@ -272,18 +347,34 @@ class CFBenchmark:
             
             print(f"Processing {len(df)} examples for {item}")
             
-            # Process each row with error handling
-            outputs = []
+            # Process each row with parallel execution
+            outputs = [""] * len(df)  # Pre-allocate output list
             
-            for i, row in df.iterrows():
-                try:
-                    output = self.get_row_response(row, item, self.test_type)
-                    outputs.append(output)
-                    if (i + 1) % 5 == 0:
-                        print(f"Processed {i+1}/{len(df)} examples for {item}")
-                except Exception as e:
-                    print(f"Error processing row {i}: {str(e)}")
-                    outputs.append("API Error")
+            # Prepare data for parallel processing
+            row_data_list = [(i, row, item, self.test_type) for i, row in df.iterrows()]
+            
+            # Use ThreadPoolExecutor for parallel API calls
+            with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+                # Submit all tasks
+                future_to_index = {
+                    executor.submit(self._process_single_row, row_data): row_data[0] 
+                    for row_data in row_data_list
+                }
+                
+                # Collect results as they complete
+                completed_count = 0
+                for future in as_completed(future_to_index):
+                    try:
+                        index, output = future.result()
+                        outputs[index] = output
+                        completed_count += 1
+                        
+                        if completed_count % 5 == 0:
+                            print(f"Processed {completed_count}/{len(df)} examples for {item}")
+                    except Exception as e:
+                        index = future_to_index[future]
+                        print(f"Error processing row {index}: {str(e)}")
+                        outputs[index] = "API Error"
             
             df['output'] = outputs
             
@@ -320,55 +411,158 @@ class CFBenchmark:
             f1 = 2 * prec * reca / (prec + reca)
         return f1
 
+    def _process_cosine_similarity_batch(self, rows_batch: List[tuple]) -> List[tuple]:
+        """Process a batch of rows for cosine similarity calculation."""
+        results = []
+        for index, row in rows_batch:
+            try:
+                cosine_s = self.get_cosine_similarities(row)
+                results.append((index, cosine_s))
+            except Exception as e:
+                print(f"Error calculating cosine similarity for row {index}: {str(e)}")
+                results.append((index, 0.0))
+        return results
+
+    def _process_f1_score_batch(self, rows_batch: List[tuple], label_list: List[str]) -> List[tuple]:
+        """Process a batch of rows for F1 score calculation."""
+        results = []
+        for index, row in rows_batch:
+            try:
+                f1_score = self.get_f1_score(row, label_list)
+                results.append((index, f1_score))
+            except Exception as e:
+                print(f"Error calculating F1 score for row {index}: {str(e)}")
+                results.append((index, 0.0))
+        return results
+
     def get_cosine_similarities(self, row):
         sentences_1 = str(row['output'])
         sentences_2 = str(row['response'])
         
-        # Use SentenceTransformer if available
-        if self.embedding_model is not None:
+        # Use modelscope embedding model if available (following the provided example pattern)
+        if self.t2v_model is not None and self.t2v_tokenizer is not None:
             try:
-                embedding1 = self.embedding_model.encode(sentences_1, convert_to_tensor=True)
-                embedding2 = self.embedding_model.encode(sentences_2, convert_to_tensor=True)
+                sentences = [sentences_1, sentences_2]
                 
-                embedding1 = torch.nn.functional.normalize(embedding1, p=2, dim=0)
-                embedding2 = torch.nn.functional.normalize(embedding2, p=2, dim=0)
+                # Tokenize sentences
+                encoded_input = self.t2v_tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
                 
-                cosine_sim = torch.nn.functional.cosine_similarity(embedding1, embedding2, dim=0)
+                # Compute token embeddings
+                with torch.no_grad():
+                    model_output = self.t2v_model(**encoded_input)
+                    # Perform pooling. In this case, cls pooling.
+                    sentence_embeddings = model_output[0][:, 0]
+                
+                # normalize embeddings
+                sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+                
+                # Calculate cosine similarity between the two embeddings
+                cosine_sim = torch.nn.functional.cosine_similarity(sentence_embeddings[0], sentence_embeddings[1], dim=0)
                 return cosine_sim.item()
             except Exception as e:
-                print(f"Error with SentenceTransformer: {str(e)}")
+                print(f"Error with modelscope embedding model: {str(e)}")
                 # Fall back to simple method
         
-        # Simple fallback method using character-level Jaccard similarity
+        # Enhanced fallback method using TF-IDF based cosine similarity
         try:
-            # Convert to sets of words for a simple overlap measure
-            words1 = set(sentences_1.lower().replace('，', ',').replace('.', ' ').replace('。', ' ').split())
-            words2 = set(sentences_2.lower().replace('，', ',').replace('.', ' ').replace('。', ' ').split())
+            # Text preprocessing
+            def preprocess_text(text):
+                # Remove punctuation and normalize
+                text = text.lower()
+                # Replace Chinese punctuation
+                text = text.replace('，', ' ').replace('。', ' ').replace('！', ' ').replace('？', ' ')
+                text = text.replace('、', ' ').replace('；', ' ').replace('：', ' ').replace('"', ' ')
+                text = text.replace('"', ' ').replace(''', ' ').replace(''', ' ').replace('（', ' ').replace('）', ' ')
+                # Replace English punctuation
+                text = text.replace(',', ' ').replace('.', ' ').replace('!', ' ').replace('?', ' ')
+                text = text.replace(';', ' ').replace(':', ' ').replace('"', ' ').replace("'", ' ')
+                text = text.replace('(', ' ').replace(')', ' ').replace('[', ' ').replace(']', ' ')
+                # Remove extra spaces
+                text = ' '.join(text.split())
+                return text
             
-            # Character-level similarity as backup
-            chars1 = set(sentences_1.lower().replace(' ', ''))
-            chars2 = set(sentences_2.lower().replace(' ', ''))
+            text1 = preprocess_text(sentences_1)
+            text2 = preprocess_text(sentences_2)
             
-            # Word-level Jaccard similarity
-            if len(words1) > 0 and len(words2) > 0:
-                word_overlap = len(words1.intersection(words2))
-                word_total = len(words1.union(words2))
-                word_sim = word_overlap / word_total if word_total > 0 else 0
+            # Handle empty texts
+            if not text1.strip() and not text2.strip():
+                return 1.0  # Both empty, perfect match
+            if not text1.strip() or not text2.strip():
+                return 0.0  # One empty, no match
+            
+            # Split into tokens for Chinese and English
+            def get_tokens(text):
+                # For mixed Chinese-English text, use both word and character level
+                words = text.split()
+                tokens = []
+                for word in words:
+                    # If word contains Chinese characters, split into characters
+                    if any('\u4e00' <= char <= '\u9fff' for char in word):
+                        tokens.extend(list(word))
+                    else:
+                        tokens.append(word)
+                return tokens
+            
+            tokens1 = get_tokens(text1)
+            tokens2 = get_tokens(text2)
+            
+            # Create vocabulary
+            vocab = list(set(tokens1 + tokens2))
+            if not vocab:
+                return 0.0
+            
+            # Calculate simple TF vectors (term frequency)
+            def calculate_tf_vector(tokens, vocab):
+                tf = {}
+                for token in tokens:
+                    tf[token] = tf.get(token, 0) + 1
                 
-                # Character-level Jaccard similarity
-                char_overlap = len(chars1.intersection(chars2))
-                char_total = len(chars1.union(chars2))
-                char_sim = char_overlap / char_total if char_total > 0 else 0
+                # Create vector based on vocabulary
+                vector = []
+                for token in vocab:
+                    vector.append(tf.get(token, 0))
                 
-                # Weighted combination
-                return 0.7 * word_sim + 0.3 * char_sim
+                return np.array(vector, dtype=float)
             
-            # If no words, use character similarity
-            return len(chars1.intersection(chars2)) / len(chars1.union(chars2)) if len(chars1.union(chars2)) > 0 else 0
+            vector1 = calculate_tf_vector(tokens1, vocab)
+            vector2 = calculate_tf_vector(tokens2, vocab)
+            
+            # Calculate cosine similarity
+            dot_product = np.dot(vector1, vector2)
+            norm1 = np.linalg.norm(vector1)
+            norm2 = np.linalg.norm(vector2)
+            
+            if norm1 == 0 or norm2 == 0:
+                return 0.0
+            
+            cosine_sim = dot_product / (norm1 * norm2)
+            
+            # Ensure the result is between 0 and 1
+            cosine_sim = max(0.0, min(1.0, cosine_sim))
+            
+            return cosine_sim
             
         except Exception as e:
-            print(f"Error in fallback similarity calculation: {str(e)}")
-            return 0
+            print(f"Error in enhanced similarity calculation: {str(e)}")
+            # Final fallback to simple Jaccard similarity
+            try:
+                # Simple word-level Jaccard similarity as last resort
+                words1 = set(sentences_1.lower().replace('，', ' ').replace('。', ' ').split())
+                words2 = set(sentences_2.lower().replace('，', ' ').replace('。', ' ').split())
+                
+                if not words1 and not words2:
+                    return 1.0
+                if not words1 or not words2:
+                    return 0.0
+                
+                intersection = len(words1.intersection(words2))
+                union = len(words1.union(words2))
+                
+                return intersection / union if union > 0 else 0.0
+                
+            except Exception as e2:
+                print(f"Error in fallback Jaccard similarity: {str(e2)}")
+                return 0.0
 
     def get_test_scores(self):
         result_directory = os.path.join(self.scores_path, self.test_type, self.modelname)
@@ -390,13 +584,40 @@ class CFBenchmark:
                 continue
                 
             if classes == 'suggestion' or classes == 'summary' or classes == 'risk':
-                df['cosine_s'] = df.apply(lambda row: self.get_cosine_similarities(row), axis=1)
+                # Parallel processing for cosine similarity
+                batch_size = max(1, len(df) // self.max_workers)
+                batches = []
+                for i in range(0, len(df), batch_size):
+                    batch = [(idx, row) for idx, row in df.iloc[i:i+batch_size].iterrows()]
+                    batches.append(batch)
+                
+                cosine_scores = [0.0] * len(df)
+                
+                with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+                    future_to_batch = {
+                        executor.submit(self._process_cosine_similarity_batch, batch): batch 
+                        for batch in batches
+                    }
+                    
+                    for future in as_completed(future_to_batch):
+                        try:
+                            batch_results = future.result()
+                            for index, score in batch_results:
+                                cosine_scores[index] = score
+                        except Exception as e:
+                            print(f"Error processing cosine similarity batch: {str(e)}")
+                
+                df['cosine_s'] = cosine_scores
                 score1 = df['cosine_s'].sum() / len(df)
-                print(f"{self.modelname}的{classes} cosine_similarity为{score1}")
+                result_message = f"{self.modelname}的{classes} cosine_similarity为{score1}"
+                print(result_message)
+                
             elif classes == 'company' or classes == 'product':
+                # For company/product, use response labels directly
                 df['f1score'] = df.apply(lambda row: self.get_f1_score(row, row['response'].split('，')), axis=1)
                 score1 = df['f1score'].sum() / len(df)
                 print(f"{self.modelname}的{classes} f1 score 为{score1}")
+                
             else:
                 # Dynamically extract labels from the data instead of using predefined labels
                 all_labels = set()
@@ -418,7 +639,30 @@ class CFBenchmark:
                 print(f"Found {len(label_list)} unique labels for {classes}: {label_list}")
                 
                 if label_list:
-                    df['f1score'] = df.apply(lambda row: self.get_f1_score(row, label_list), axis=1)
+                    # Parallel processing for F1 scores
+                    batch_size = max(1, len(df) // self.max_workers)
+                    batches = []
+                    for i in range(0, len(df), batch_size):
+                        batch = [(idx, row) for idx, row in df.iloc[i:i+batch_size].iterrows()]
+                        batches.append(batch)
+                    
+                    f1_scores = [0.0] * len(df)
+                    
+                    with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+                        future_to_batch = {
+                            executor.submit(self._process_f1_score_batch, batch, label_list): batch 
+                            for batch in batches
+                        }
+                        
+                        for future in as_completed(future_to_batch):
+                            try:
+                                batch_results = future.result()
+                                for index, score in batch_results:
+                                    f1_scores[index] = score
+                            except Exception as e:
+                                print(f"Error processing F1 score batch: {str(e)}")
+                    
+                    df['f1score'] = f1_scores
                     score1 = df['f1score'].sum() / len(df)
                     print(f"{self.modelname}的{classes} f1 score 为{score1}")
                 else:
